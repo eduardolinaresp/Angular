@@ -1,0 +1,13 @@
+version: '3'
+services:
+   FrontEnd:
+    build: ./FrontEnd
+    # command: bash  -c "dotnet ef database update"
+    #volumes:
+    #   - .:/myapp
+    ports:
+      - "8080:80" #angular https://morioh.com/p/6d7ed9423511
+    #  - "5001:5001"
+    depends_on:
+      - db 
+ 
